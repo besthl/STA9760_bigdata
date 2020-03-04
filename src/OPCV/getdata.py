@@ -1,7 +1,6 @@
 from requests import HTTPError
 from sodapy import Socrata
 
-
 class Function(object):
 	def __init__(self, app_token, domain="data.cityofnewyork.us"):
 		self.client = Socrata(domain, app_token)
