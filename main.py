@@ -23,7 +23,6 @@ if __name__ == "__main__":
     if output is None:
         with Function(app_key) as function:
             total_size = function.get_size(location)
-            # print(f"total_size={total_size}")
             print(function.get_info(location, limit_size))
             offset = 0
             for i in range(num_pages-1):
